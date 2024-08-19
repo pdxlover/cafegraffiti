@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/*모바일*/
+#wrap {
+    min-width: 320px;
+    /* position: relative; */
+}
+
+
+header .header_wrap {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo a{
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+header .logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    float: right;
+}
+
+.ham {
+    width: 40px;
+    height: auto;
+    /* position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); */
+
+}
+
+.ham a {
+    width: 100%;
+    height: 100%;
+}
+
+.ham a img {
+    width: 100%;
+    height: 100%;
+}
+
+.gnb {
+    display: none;
+}
+
+.mgnb_wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color:#F9F9F9;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    z-index: 99;
+    padding: 40px 20px;
+}
+.mgnb_wrap .mgnb_logo{
+    width: 30%;
+    height: auto;
+    margin: 50px auto;
+}
+.mgnb_wrap .mgnb_logo img{
+    width: 100%;
+    height: auto;
+}
+.mgnb_wrap .mgnb{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.mgnb_wrap .mgnb li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.mgnb_wrap .mgnb li span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+}
+.mgnb_wrap .mgnb li a{
+    display: block;
+    padding: 20px 0;
+    font-size: 2.0em;
+    font-weight: bold;
+}
+.mgnb_close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.mgnb_close img{
+    width: 100%;
+    height: 100%;
+}
+
+#main_visual {
+    width: 100vw;
+    height: 100vh;
+}
+.swiper-wrapper {
+    transition-timing-function: linear;
+ }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background: #ffcccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide >div p{
+    display: block;
+    font-weight: bold;
+    font-size: 4.0em;
+    color: #fff;
+}
+
+.slide1 {
+    background: url(../img/main_visual_01.jpg) no-repeat center / cover;
+}
+
+.slide2 {
+    background: url(../img/main_visual_02.jpg) no-repeat center / cover;
+}
+
+.slide3 {
+    background: url(../img/main_visual_03.jpg) no-repeat center / cover;
+}
+.swiper-pagination-bullet{
+    width: 50px;
+    height: 3px;
+    border-radius: 10px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+
+#about{
+    padding: 50px 20px;
+}
+.about_img{
+    width:100%;
+    height: auto;
+    min-width: 0;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.about_img li{
+    width: calc((100% - 40px) / 5);
+    height: 350px;
+}
+.about_img li.about_img_01{
+    background: url(../img/img_about_01.jpg) no-repeat center top / cover;
+}
+.about_img li.about_img_02{
+    background: url(../img/img_about_02.jpg) no-repeat center top / cover;
+}
+.about_img li.about_img_03{
+    background: url(../img/img_about_03.jpg) no-repeat center top / cover;
+}
+.about_img li.about_img_04{
+    background: url(../img/img_about_04.jpg) no-repeat center top / cover;
+}
+.about_img li.about_img_05{
+    background: url(../img/img_about_05.jpg) no-repeat center top / cover;
+}
+
+/* .about_img li img{
+    width: 100%;
+    height: 100%;
+} */
+.about_con{
+    width: 100%;
+}
+.about_con h2{
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.about_con p{
+    display: block;
+    font-size: 1.6em;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.about_con a{
+    display: block;
+    width: 80px;
+    height: 35px;
+    font-size: 1.6em;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 35px;
+}
+.about_con a:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* #about .about_img .about_grid img{
+    width: 100%;
+    height: auto;
+} */
+
+
+
+
+/*768이하*/
+@media screen and (min-width:768px) {
+
+    header .logo a{
+        width: 200px;
+    }
+
+    .mgnb_wrap .mgnb_logo{
+        width: 20%;
+        height: auto;
+        margin: 30px auto;
+    }
+    .swiper-slide >div p{
+        font-size: 5.0em;
+    }
+    .about_img li{
+        height: 450px;
+    }
+}
+
+/*1024이하*/
+@media screen and (min-width:1024px) {
+    header .logo a{
+        width: 250px;
+    }
+
+    .swiper-pagination-bullet{
+        width: 80px;
+    }
+
+    #about .about_flex_wrap{
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+    }
+ 
+}
+
+/*1400이하*/
+@media screen and (min-width:1400px) {
+    .ham{
+        display: none;
+    }
+    .gnb{
+        display: flex;
+    }
+    .gnb li a{
+        padding: 15px 32px;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .swiper-pagination-bullet{
+        width: 100px;
+    }
+}
