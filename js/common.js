@@ -4,6 +4,8 @@ $(document).ready(function(){//시작
     var swiper = new Swiper(".m_main_slide",{
         centeredSlides: true,
         loop: true,
+        effect:'fade',
+        speed:800,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,

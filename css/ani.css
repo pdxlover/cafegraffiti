@@ -5,3 +5,8 @@
     50%{transform: rotate(10deg);}
 	100% {transform: rotate(-10deg);}
 } */
+
+@keyframes line_uptodown {
+	from{width:1px; height: 0;}
+	to{width:1px; height: 50px;}
+}
