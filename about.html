@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,185 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/ani.css">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
-    
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="index.html"><img src="img/logo_black.png" alt="로고"></a>
+                </h1><!--.logo-->
+                <nav>
+                    <ul class="gnb">
+                        <li class="gnb_line"><a href="about.html">Cafe Graffiti</a></li>
+                        <li class="gnb_line"><a href="menu.html">Menu</a></li>
+                        <li class="gnb_line"><a href="community.html">Community</a></li>
+                        <li class="gnb_line"><a href="shop.html">Store</a></li>
+                    </ul><!--.gnb-->
+
+                    <div class="ham">
+                        <a href="#"><img src="img/icon_ham_black.png" alt="모바일 열기버튼"></a>
+                    </div><!--.ham-->
+
+                    <div class="mgnb_wrap">
+                        <div class="mgnb_logo">
+                            <img src="img/logo_color.png" alt="로고">
+                        </div>
+                        <ul class="mgnb">
+                            <li><span></span><a href="about.html">Cafe Graffiti</a></li>
+                            <li><span></span><a href="menu.html">Menu</a></li>
+                            <li><span></span><a href="community.html">Community</a></li>
+                            <li><span></span><a href="shop.html">Store</a></li>
+                        </ul><!--mgnb-->
+                        <div class="mgnb_close">
+                            <img src="img/icon_close.png" alt="메뉴 닫기">
+                        </div><!--.mgnb_close-->
+                    </div><!--mgnb_wrap-->
+                </nav>
+            </div><!--header_wrap-->
+        </header>
+
+        <div id="content">
+            <section id="about_main_img"  data-aos="fade-down" data-aos-duration="1000">
+                <div class="main_txt_wrap" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+                    <h2>Graffiti</h2>
+                    <p>20,30대의 트렌드세터들을 타겟으로 하는 카페 그래피티는
+                        예술가들의 작업공간으로써의 역할을 하는동시에 다양한 아이디어를
+                        공유 할 수 있는 공간입니다.</p>
+                </div><!--main_txt_wrap-->
+            </section>
+            <section id="brand_logo">
+                <div class="inner">
+                    <h2 class="section_tit">Logo</h2>
+                    <p class="section_txt">예술을 사랑하는 컨셉의 커피 캐릭터와 심플한 워드 마크 로고를 사용</p>
+                    <div class="brand_logo_img">
+                        <img src="img/img_brand_logo.jpg" alt="로고이미지">
+                    </div>
+                </div><!--inner-->
+            </section>
+            <section id="brand_ch">
+                <div class="inner">
+                    <h2 class="section_tit">Character</h2>
+                    <p class="section_txt">카페 그래피티의 캐릭터들을 만나보세요!</p>
+                    <div class="ch_wrap">
+                        <div class="ch_box ch_box_01">
+                            <div class="ch_box_img">
+                                <img class="leftright" src="img/img_ch_01.png" alt="캐릭터이미지1">
+                            </div>
+                            <div class="ch_box_con">
+                                <h3>최커피</h3>
+                                <p>‘최커피’라는 가명으로 활동하는 예술가. 
+                                    주로 그래피티 작업을 하며 커피는 한잔도 마시지 못 함</p>
+                            </div>
+                        </div>
+                        <div class="ch_box ch_box_02">
+                            <div class="ch_box_img item_order">
+                                <img class="middle" src="img/img_ch_02.png" alt="캐릭터이미지2">
+                            </div>
+                            <div class="ch_box_con ">
+                                <h3>미스터 스웨그</h3>
+                                <p>힙합 음악에 매우 심취해 있으며 아이스 
+                                    아메리카노를 매우 좋아하여 하루에 4잔 이상을 마심</p>
+                            </div>
+                        </div>
+                        <div class="ch_box ch_box_03">
+                            <div class="ch_box_img">
+                                <img class="rightleft" src="img/img_ch_03.png" alt="캐릭터이미지3">
+                            </div>
+                            <div class="ch_box_con">
+                                <h3>곽선수</h3>
+                                <p>스케이트보드 국가대표 선수. 유일한 취미는 숨은 커피 맛집 찾기. 
+                                    스케이트보드를 타고 전국 커피 맛집 도장깨기를 하는중</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="brand_color">
+                <div class="inner">
+                    <h2 class="section_tit">Color</h2>
+                    <p class="section_txt">모던한 블랙과 젊음의 열정이 가득한 레드 컬러를 사용한 브랜드 아이덴티티 형성</p>
+                    <div class="brand_color_wrap">
+                        <div class="brand_color_box">
+                            <div class="color_box_wrap">
+                                <div class="color red"></div>
+                                <div class="color_txt">
+                                    <p>#FF3B3B</p>
+                                    <p>
+                                        <span>R  255</span>
+                                        <span>G  59</span>
+                                        <span>B  59</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--brand_color_box-->
+                        <div class="brand_color_box">
+                            <div class="color_box_wrap">
+                                <div class="color black"></div>
+                                <div class="color_txt">
+                                    <p>#000000</p>
+                                    <p>
+                                        <span>R  0</span>
+                                        <span>G  0</span>
+                                        <span>B  0</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!--brand_color_box-->
+                    </div>
+                </div>
+            </section>
+        </div><!--#content-->
+
+        
+        <footer>
+            <div class="inner">
+                <a href="index.html"><img src="img/logo_color.png" alt="컬러로고"></a>
+                <div class="f_info">
+                    <p>
+                        <span>상호명:카페 그래피티</span>
+                        <span>대표자:이지은</span>
+                        <span>고객센터:051-234-5678</span>
+                    </p>
+                    <p>
+                        <span>주소:부산광역시 부산진구 중앙대로 708</span>
+                        <span>이메일:cafegraffiti@coffee.com</span>
+                    </p>
+                    <p>
+                        <span>사업장 소재지:부산광역시 부산진구 중앙대로 708</span>
+                    </p>
+                    <p>
+                        <span>Copyright ⓒ 2022 (주)그래피티 All Rights Reserved.</span>
+                    </p>
+                </div><!--f_info-->
+                <div class="f_sns">
+                    <p>Follow us:</p>
+                    <div class="sns_flex_wrap">
+                        <div class="sns">
+                            <a href="#"><img src="img/f_sns_insta.png" alt="인스타그램아이콘"></a>
+                        </div>
+                        <div class="sns">
+                            <a href="#"><img src="img/f_sns_line.png" alt="라인아이콘"></a>
+                        </div>
+                        <div class="sns">
+                            <a href="#"><img src="img/f_sns_mail.png" alt="메일아이콘"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div><!--#wrap-->
 </body>
+
 </html>
