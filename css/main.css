@@ -348,6 +348,47 @@ nav {
 
 /*store 끝*/
 
+
+
+/*탑버튼*/
+.btn_wrap{
+    width: 140px;
+    height: 100px;
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+}
+.btn_wrap .go_top{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 70px;
+    background-color: #EC3233;
+    color: #fff;
+   font-size: 1.6em;
+   font-weight: bold;
+   text-align: center;
+   display: block;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   opacity: 0;
+   transition: all 0.3s;
+}
+.btn_wrap .top_btn img{
+    width: 100%;
+    height: 100%;
+}
+.btn_wrap:hover .top_btn img{
+    display: none;
+}
+.btn_wrap:hover .go_top{
+    opacity: 1;
+}
+
+
 footer {
     padding: 60px 20px;
     background-color: #eaeaea;

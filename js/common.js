@@ -93,6 +93,16 @@ $(document).ready(function () {//시작
     yoyo: true,
     ease: 'power2.inOut',
   });
+
+  gsap.fromTo(".downup", {
+    translateY: 8,
+  }, {
+    translateY: -8,
+    duration: 1.5,
+    repeat: -1,
+    yoyo: true,
+    ease: 'power2.inOut',
+  });
   //스티커 에니메이션 끝
 
 
