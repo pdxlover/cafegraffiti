@@ -112,6 +112,7 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 .mgnb_close img {
